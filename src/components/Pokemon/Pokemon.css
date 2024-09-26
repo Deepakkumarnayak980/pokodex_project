@@ -1,0 +1,42 @@
+.pokemon-list-wrapper {
+    margin: 2rem auto;
+    width: 90%; /* Ensures the list doesn't span the entire screen */
+}
+
+.pokemon-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem; /* Adds some space between each Pokémon */
+    padding: 1rem;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pokemon img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.pokemon h2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.pokemon:hover {
+    transform: scale(1.05); /* Add a little zoom effect on hover */
+}
