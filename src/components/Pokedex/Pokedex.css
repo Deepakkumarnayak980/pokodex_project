@@ -1,11 +1,13 @@
+<<<<<<< HEAD
 .pokedex-wrapper{
     display: flex;
     flex-direction:column;
   
 
     
+=======
+>>>>>>> 49168db (add Routing)
 
-}
 #pokedex-heading{
     margin: 0 auto;
     letter-spacing:5px ;

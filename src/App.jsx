@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Link } from 'react-router-dom';
 import './App.css'
-import './components/Pokedex/Pokedex'
-import Pokedex from './components/Pokedex/Pokedex'
+import CustomRoutes from './routes/CustomRoutes';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   
-    <h1>
-      <Pokedex/>
-    </h1>
+    <div className="outer-pokedex">
+      <h1 id="pokedex-heading">
+        <Link to="/">Pokedex</Link>
+      </h1>
+      <CustomRoutes />
+    </div>
   )
 }
 
